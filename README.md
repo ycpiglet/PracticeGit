@@ -1,2 +1,1 @@
-# PracticeGit
-Practicing Git/GitHub
+README를 연습해보자!
