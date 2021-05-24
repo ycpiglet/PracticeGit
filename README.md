@@ -9,24 +9,25 @@
 
 
 # _Profile_
- - Nationality : Republic of Korea
- - Birth : 1995
- - Language : Korean, English, Japanese
- - Hobby : Playing basketball, Working out, Reading books, Writing, Listening to music and etc
+ - __Nationality__ : Republic of Korea
+ - __Birth__ : 1995
+ - __Language__ : Korean, English, Japanese
+ - __Hobby__ : Playing basketball, Working out, Reading books, Writing, Listening to music and etc
 ### _Specaility_
- - Major : Mechartronics
- - University : Korea Politech University ([KPU](http://www.kpu.ac.kr/index.do))
- - Computer Language : C/C++, Python, ROS
- - MCU : Arduino, RaspberryPi, STM32, Jetson Nano
- - Modeling : Fusion 360, SolidWorks
- - Design : 
+ - __Major__ : Mechartronics
+ - __University__ : Korea Politech University ([KPU](http://www.kpu.ac.kr/index.do))
+ - __Computer Language__ : C/C++, Python, ROS
+ - __MCU__ : Arduino, RaspberryPi, STM32, Jetson Nano
+ - __Modeling__ : Fusion 360, SolidWorks
+ - __Design__ : X
 
 
  # _Website_
 - __개인 블로그(Personal Blog)__
   - 네이버(Naver) : [미니맘바의 블로그](https://blog.naver.com/ycpiglet)
-  - 카카오(Kakao) : 
-  - 유튜브(Youtube) : 
+  - 카카오(Kakao) : []()
+  - 유튜브(Youtube) : []()
+  - 깃허브(GitHub) : []()
  
 - __팀 블로그(Team Blog) or 깃허브(GitHub)__
   - 자율주행 스터디(A.D studying) : [M.A.P.S]()
