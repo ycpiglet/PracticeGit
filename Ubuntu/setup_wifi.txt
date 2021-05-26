@@ -1,0 +1,15 @@
+$ sudo apt update
+$ sudo apt install build-essential git
+$ git clone https://git.kernel.org/pub/scm/linux/kernel/git/iwlwifi/backport-iwlwifi.git
+$ cd backport-iwlwifi
+$ sudo make
+$ sudo make install
+$ sudo -i
+echo “options iwlwifi disable_msix=1”  >>  /etc/modprobe.d/iwlwifi.conf
+exit
+
+
+$ cd backport-iwlwifi
+$ sudo make clean
+$ sudo make
+$ sudo make install
