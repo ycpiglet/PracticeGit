@@ -1,3 +1,11 @@
-﻿  Practice.c
+﻿  practice_loldic.c
+c:\users\minimamba\documents\archive\cpp\practice\practice\practice_loldic.c(52): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+c:\users\minimamba\documents\archive\cpp\practice\practice\practice_loldic.c(53): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+c:\users\minimamba\documents\archive\cpp\practice\practice\practice_loldic.c(136): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note: 'scanf' 선언을 참조하십시오.
+c:\users\minimamba\documents\archive\cpp\practice\practice\practice_loldic.c(202): warning C4013: '_getch'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+c:\users\minimamba\documents\archive\cpp\practice\practice\practice_loldic.c(78): warning C4700: 초기화되지 않은 'q' 지역 변수를 사용했습니다.
   Practice.vcxproj -> C:\Users\minimamba\Documents\Archive\Cpp\Practice\Debug\Practice.exe
   Practice.vcxproj -> C:\Users\minimamba\Documents\Archive\Cpp\Practice\Debug\Practice.pdb (Full PDB)
