@@ -2,8 +2,8 @@
 #### _This is my own archive._
 
 ![미니맘바의 블로그](https://github.com/ycpiglet/Archive/blob/main/Images/%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EC%BA%A1%EC%B2%98.JPG)
- 
- 
+
+
 # _How to contact?_
 - __E-mail__ : ycpiglet@naver.com / ycpiglet@gmail.com
 
@@ -22,9 +22,10 @@
  - __Design__ : X
 
 
+
  # _Website_
 - __개인 블로그(Personal Blog)__
-  - 네이버(Naver) : [미니맘바의 블로그](https://blog.naver.com/ycpiglet)
+  - 네이버(Naver) : [미니맘바의 블로그(Hic et nunc)](https://blog.naver.com/ycpiglet)
   - 카카오(Kakao) : []()
   - 유튜브(Youtube) : []()
   - 깃허브(GitHub) : []()
