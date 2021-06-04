@@ -1,3 +1,0 @@
-﻿  EntryTest.cpp
-c:\users\minimamba\documents\archive\cpp\datastructure\test\test\entrytest.cpp(40): error C3863: 배열 형식 'char [10]'은(는) 할당할 수 없습니다.
-c:\users\minimamba\documents\archive\cpp\datastructure\test\test\entrytest.cpp(46): error C3863: 배열 형식 'char [10]'은(는) 할당할 수 없습니다.

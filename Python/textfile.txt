@@ -1,0 +1,3 @@
+사랑해요
+이번엔 진짜라구요& c:/Users/minimamba/Documents/Archive/Python/venv/Scripts/python.exe c:/Users/minimamba/Documents/Archive/Python/Sundries/etc/11th-1.py
+거짓이 아니에요
