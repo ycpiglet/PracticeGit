@@ -1,0 +1,4 @@
+﻿  LOLDIC_DoublyLinkedList.c
+C:\Users\minimamba\Documents\Archive\Cpp\Practice_vs2019\Practice_vs2019\LOLDIC_DoublyLinkedList.c(136,1): warning C4047: '초기화 중': 'LinkedList_h_DL *'의 간접 참조 수준이 'LinkedList_h_DL **'과(와) 다릅니다.
+C:\Users\minimamba\Documents\Archive\Cpp\Practice_vs2019\Practice_vs2019\LOLDIC_DoublyLinkedList.c(121): warning C4716: 'Array2LinkedList': 값을 반환해야 합니다.
+  Practice_vs2019.vcxproj -> C:\Users\minimamba\Documents\Archive\Cpp\Practice_vs2019\Debug\Practice_vs2019.exe

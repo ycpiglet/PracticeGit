@@ -1,7 +1,0 @@
-﻿  연습용.cpp
-c:\users\minimamba\source\repos\practice\datastructure\sample\연습용.cpp(94): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note: 'scanf' 선언을 참조하십시오.
-c:\users\minimamba\source\repos\practice\datastructure\sample\연습용.cpp(96): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note: 'scanf' 선언을 참조하십시오.
-  Sample.vcxproj -> C:\Users\minimamba\Source\Repos\Practice\DataStructure\Debug\Sample.exe
-  Sample.vcxproj -> C:\Users\minimamba\Source\Repos\Practice\DataStructure\Debug\Sample.pdb (Full PDB)
