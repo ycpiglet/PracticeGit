@@ -1,0 +1,24 @@
+[2021-06-22 15:15:47.191] [remoteagent] [info] 
+
+*
+* Visual Studio Code Server
+*
+* Reminder: You may only use this software with Visual Studio family products,
+* as described in the license https://aka.ms/vscode-remote/license
+*
+
+
+[2021-06-22 15:15:47.191] [remoteagent] [info] Extension host agent started.
+[2021-06-22 15:15:47.559] [remoteagent] [info] [::ffff:172.31.144.1][1956f0fd][ManagementConnection] New connection established.
+[2021-06-22 15:15:47.562] [remoteagent] [info] [::ffff:172.31.144.1][83e0f8e1][ExtensionHostConnection] New connection established.
+[2021-06-22 15:15:47.785] [remoteagent] [info] [::ffff:172.31.144.1][83e0f8e1][ExtensionHostConnection] <141> Launched Extension Host Process.
+[2021-06-22 15:15:50.074] [remoteagent] [warning] [File Watcher (chokidar)] Error: Circular symlink detected: "/mnt/c/Users/minimamba/AppData/Local/Application Data" points to "/mnt/c/Users/minimamba/AppData/Local"
+[2021-06-22 15:15:50.944] [remoteagent] [info] Installing extension: ms-azuretools.vscode-docker
+[2021-06-22 15:15:52.270] [remoteagent] [info] Downloaded extension: ms-azuretools.vscode-docker /home/ycpiglet/.vscode-server/data/CachedExtensionVSIXs/ms-azuretools.vscode-docker-1.14.0
+[2021-06-22 15:15:53.384] [remoteagent] [info] Extracted extension to /home/ycpiglet/.vscode-server/extensions/.3ef89744-33aa-4268-a461-549622c23a67: ms-azuretools.vscode-docker
+[2021-06-22 15:15:53.441] [remoteagent] [info] Renamed to /home/ycpiglet/.vscode-server/extensions/ms-azuretools.vscode-docker-1.14.0
+[2021-06-22 15:15:53.454] [remoteagent] [info] Installation completed. ms-azuretools.vscode-docker
+[2021-06-22 15:15:54.035] [remoteagent] [info] Extensions installed successfully: ms-azuretools.vscode-docker
+[2021-06-22 15:16:06.298] [remoteagent] [info] [::ffff:172.31.144.1][1956f0fd][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2021-06-22 15:16:07.374] [remoteagent] [info] [::ffff:172.31.144.1][83e0f8e1][ExtensionHostConnection] <141> Extension Host Process exited with code: 0, signal: null.
+[2021-06-22 15:16:07.375] [remoteagent] [info] Last EH closed, waiting before shutting down
