@@ -9,6 +9,7 @@ pub = rospy.Publisher('counter', Int32)
 rate = rospy.Rate(2)
 
 count = 0
+
 while not rospy.is_shutdown():
     pub.publish(count)
     count += 1
