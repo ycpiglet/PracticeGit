@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import pandas as pd
 
 dic_data = {
@@ -24,3 +25,15 @@ new_count = str(count)
 print(new_count)
 print(type(new_count))
 >>>>>>> 71cb403ffd67df7e8f85819ae4c185eae334c1ce
+=======
+# string = "init new_node"
+# split = string.split()
+# print(string)
+# print(split)
+# print(type(split[1]))
+
+count = 3
+new_count = str(count)
+print(new_count)
+print(type(new_count))
+>>>>>>> 30cc49dcdebc0338b8926ba1ca9da7a039cedc78
