@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LOLDIC_DoublyLinkedList.c" />
+    <ClCompile Include="..\..\21-1 자료구조\F구제시험_2014132035.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
