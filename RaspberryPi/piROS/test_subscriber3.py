@@ -60,6 +60,7 @@ def key_input(e):
 rospy.init_node("test_subscriber")
 sub = rospy.Subscriber("topic", Int32, callback)
 
+# GUI
 root = tkinter.Tk()
 root.title("background")
 root.geometry("600x400")

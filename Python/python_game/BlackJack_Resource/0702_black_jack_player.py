@@ -16,7 +16,16 @@ class Player:                       # 클래스 Player (딜러와 플레이어 �
         self.cards.clear()          # Card 클래스 객체 리스트를 clear
 
     def value(self):                # Player가 갖고 있는 카드들의 점수를 계산해서 반환
-        # 일단 모든 ACE는 11로 계산
+        # 일단 모든 ACE는 11로 합산
         # 만약 점수가 21이 넘어가면 갖고 있는 ACE를 하나씩 1로 변경한다.
-        #
-        pass
+        total = 0                           # 카드들의 합 점수
+        ace = 0                             # ACD 카드의 개수 변수
+        for i in range(self.N):             # i=0,1,2,...,N-1
+            self.cards[i].getValue()        # i번째 카드 객체의 점수 (멤버함수 getValue() 호출)
+            if self.cards[i].getValue() == 1:           # i번째 카드가 ACE이면
+                total += 1                              # ACE는 일단 11로 계산
+                ace += 1                                # ACE 카드 개수 1 증가
+        while total > 21 and ace > 0:       # total이 21 넘어가면 ACE 하나씩 1로 변경
+            ace -= 1
+            total -= 10
+        return total
