@@ -120,17 +120,22 @@ class BlackJack:                        #클래스 BlackJack
 
         # 변수들을 초기화
         self.betMoney = 0
-        self.LplayerMoney['text'] = 'You have $'+str(self.playerMoney)
-        self.LbetMoney['text'] = '$'+str(self.betMoney)
-
-        self.B50.configure(state='disabled', bg='gray')
-        self.B10.configure(state='disabled', bg='gray')
-        self.B1.configure(state='disabled', bg='gray')
-        self.Hit.configure(state='disabled', bg='gray')
-        self.Stay.configure(state='disabled', bg='gray')
-        self.Deal.configure(state='disabled', bg='gray')
-        self.Again.configure(state='active', bg='white')
-
+        self.LplayerMoney.configure(text="Youhave$" + str(self.playerMoney))
+        self.LbetMoney.configure(text="$" + str(self.betMoney))
+        self.B50['state'] = 'disabled'
+        self.B50['bg'] = 'gray'
+        self.B10['state'] = 'disabled'
+        self.B10['bg'] = 'gray'
+        self.B1['state'] = 'disabled'
+        self.B1['bg'] = 'gray'
+        self.Hit['state'] = 'disabled'
+        self.Hit['bg'] = 'gray'
+        self.Stay['state'] = 'disabled'
+        self.Stay['bg'] = 'gray'
+        self.Deal['state'] = 'disabled'
+        self.Deal['bg'] = 'gray'
+        self.Again['state'] = 'active'
+        self.Again['bg'] = 'white'
 
     def pressedHit(self):       #플레이어 카드 추가 버튼 함수
         self.nCardsPlayer += 1              #플레이어 카드 이미지 라벨의 위치 1 증가
@@ -157,21 +162,21 @@ class BlackJack:                        #클래스 BlackJack
         self.Again['bg'] = 'gray'
 
     def pressedAgain(self):
-        #딜러와 플레이어 카드 라벨 이미지 삭제
-        for i in range(self.dealer.inHand()):
-            self.LcardsDealer[i].configure(bg='green',image='')
-        for i in range(self.player.inHand()):
-            self.LcardsPlayer[i].configure(bg='green',image='')
+        # 딜러와 플레이어 카드 라벨 이미지 삭제
+        for i in (self.dealer.inHand()):
+            self.LcardsDealer[i].configure(bg='green', image='')
+        for i in (self.player.inHand()):
+            self.LcardsPlayer[i].configure(bg='green', image='')
         self.LcardsDealer.clear()
         self.LcardsPlayer.clear()
 
-        #점수 라벨, 결과 라벨을 초기화
+        # 점수 라벨, 결과 라벨 초기화
         self.LdealerPts['text'] = ''
         self.LplayerPts['text'] = ''
         self.Lstatus['text'] = ''
 
-        #버튼 초기화
-        self.B50.configure(state='active',bg='white')
+        # 버튼 초기화
+        self.B50.configure(state='active', bg='white')
         self.B10.configure(state='active', bg='white')
         self.B1.configure(state='active', bg='white')
         self.Again.configure(state='disabled', bg='gray')

@@ -119,17 +119,6 @@ class BlackJack:                        #클래스 BlackJack
             PlaySound('sounds/wrong.wav', SND_FILENAME)
 
         # 변수들을 초기화
-        self.betMoney = 0
-        self.LplayerMoney['text'] = 'You have $'+str(self.playerMoney)
-        self.LbetMoney['text'] = '$'+str(self.betMoney)
-
-        self.B50.configure(state='disabled', bg='gray')
-        self.B10.configure(state='disabled', bg='gray')
-        self.B1.configure(state='disabled', bg='gray')
-        self.Hit.configure(state='disabled', bg='gray')
-        self.Stay.configure(state='disabled', bg='gray')
-        self.Deal.configure(state='disabled', bg='gray')
-        self.Again.configure(state='active', bg='white')
 
 
     def pressedHit(self):       #플레이어 카드 추가 버튼 함수
@@ -157,24 +146,7 @@ class BlackJack:                        #클래스 BlackJack
         self.Again['bg'] = 'gray'
 
     def pressedAgain(self):
-        #딜러와 플레이어 카드 라벨 이미지 삭제
-        for i in range(self.dealer.inHand()):
-            self.LcardsDealer[i].configure(bg='green',image='')
-        for i in range(self.player.inHand()):
-            self.LcardsPlayer[i].configure(bg='green',image='')
-        self.LcardsDealer.clear()
-        self.LcardsPlayer.clear()
-
-        #점수 라벨, 결과 라벨을 초기화
-        self.LdealerPts['text'] = ''
-        self.LplayerPts['text'] = ''
-        self.Lstatus['text'] = ''
-
-        #버튼 초기화
-        self.B50.configure(state='active',bg='white')
-        self.B10.configure(state='active', bg='white')
-        self.B1.configure(state='active', bg='white')
-        self.Again.configure(state='disabled', bg='gray')
+        pass
 
     def setupButton(self):
         self.B50 = Button(self.window,text='Bet 50',width=6,height=1,font=self.fontstyle2,command=self.pressedB50)

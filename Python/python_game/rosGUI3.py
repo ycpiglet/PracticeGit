@@ -7,7 +7,7 @@ import random
 import tkinter
 from tkinter.constants import S
 import tkinter.font
-#from PIL import ImageTk, Image
+from PIL import ImageTk, Image
 
 class ROS_GUI():
     # Interrupt
