@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
-#from std_msgs.msg import Int32
-#from std_msgs.msg import String
-#import RPi.GPIO as GPIO
+from std_msgs.msg import Int32
+from std_msgs.msg import String
+import RPi.GPIO as GPIO
 import time
 import random
 import tkinter
