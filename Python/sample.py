@@ -1,39 +1,30 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-import pandas as pd
+import multiprocessing
+from multiprocessing import Process, Queue
 
-dic_data = {
-    'col1': [0,1,2],
-    'col2': [3,4,5],
-    'col3': [6,7,8],
-    'col4': [9,10,11]
-}
+def work(id, start, end, result):
+    total = 0
+    for i in range(start, end):
+        total += i
+    result.put(total)
+    return
 
-df = pd.DataFrame(dic_data)
+if __name__ == "__main__":
+    START, END = 0, 100000000
+    result = Queue()
+    th1 = Process(target=work, args=(1, START, END//2, result))
+    th2 = Process(target=work, args=(2, END//2, END, result))
+    
+    th1.start()
+    th2.start()
+    th1.join()
+    th2.join()
 
-print(type(df))
-df
-=======
-# string = "init new_node"
-# split = string.split()
-# print(string)
-# print(split)
-# print(type(split[1]))
-
-count = 3
-new_count = str(count)
-print(new_count)
-print(type(new_count))
->>>>>>> 71cb403ffd67df7e8f85819ae4c185eae334c1ce
-=======
-# string = "init new_node"
-# split = string.split()
-# print(string)
-# print(split)
-# print(type(split[1]))
-
-count = 3
-new_count = str(count)
-print(new_count)
-print(type(new_count))
->>>>>>> 30cc49dcdebc0338b8926ba1ca9da7a039cedc78
+    result.put('STOP')
+    total = 0
+    while True:
+        tmp = result.get()
+        if tmp == 'STOP':
+            break
+        else:
+            total += tmp
+    print(f"Result: {total}")
