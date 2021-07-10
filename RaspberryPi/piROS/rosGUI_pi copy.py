@@ -84,11 +84,17 @@ class ROS_GUI():
     def pushed_btnInitPub(self):
         global loop
         loop = True
+        self.label_pub = tkinter.Label(text="Publisher", font=self.fontStyle3, bg='white')
+        self.label_pub.place(x=300, y=450)
+        
+
         self.btnInitPub['state'] = 'disabled'
         self.btnTermPub['state'] = 'active'
         self.initPublisher()
 
     def pushed_btnTermPub(self):
+        self.label_pub.destroy()
+        # self.label_pub['text'] = ''
         self.btnInitPub['state'] = 'active'
         self.btnTermPub['state'] = 'disabled'
         self.termPublisher()
@@ -97,6 +103,7 @@ class ROS_GUI():
     def initPublisher(self):
         global loop
         # print('Initiate Publisher')
+        
         if loop == True:
             warning()
             self.window.after(100, self.initPublisher)
@@ -119,6 +126,7 @@ class ROS_GUI():
         global loop
         # topic.pub1.unregister()
         print('Terminate Publisher')
+        
         loop = False
 
     def initSubscriber(self):
@@ -147,14 +155,18 @@ class ROS_GUI():
     def setupLabel(self):
         self.label = tkinter.Label(text="ROS GUI for Topic", font=self.fontStyle1, bg='white')
         self.label.place(x=150, y=550)
+        self.label2 = tkinter.Label(text="Current Topic : ", font=self.fontStyle3, bg='white')
+        self.label2.place(x=150, y=450)
 
     def setupFrame(self):
         self.frame1 = tkinter.Frame(self.window)
         self.frame2 = tkinter.Frame(self.window)
         self.frame3 = tkinter.Frame(self.window)
+        self.frame4 = tkinter.Frame(self.window)
         self.frame1.pack()
         self.frame2.pack()
         self.frame3.pack()
+        self.frame4.pack()
 
     def setupText(self):
         self.text = tkinter.Text(self.canvas, width=52, height=7)
@@ -177,6 +189,7 @@ class ROS_GUI():
         self.btnErase = tkinter.Button(self.canvas, width=20, height=2, text="Erase", command=self.eraseTextInput, font=self.fontStyle2, state='disabled')
         self.btnRead.pack(side='left')
         self.btnErase.pack(side='left')
+        
         # frame3
         self.btnInitPub = tkinter.Button(self.frame3, width=20, height=3, text='Initiate Publisher', command=self.pushed_btnInitPub, font=self.fontStyle2)
         self.btnTermPub = tkinter.Button(self.frame3, width=20, height=3, text='Terminate Publisher', command=self.pushed_btnTermPub, font=self.fontStyle2, state='disabled')
